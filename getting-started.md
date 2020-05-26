@@ -7,7 +7,7 @@
 ## Installing Go
 https://golang.org/dl/
 
-## Functions
+## [Functions](https://gobyexample.com/functions) 
 ```
 func function_name ([parameter list])[return types] {
 }
