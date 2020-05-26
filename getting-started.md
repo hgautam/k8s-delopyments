@@ -3,6 +3,7 @@
 - packages
 - imports
 - functions
+- variables
 
 ## Installing Go
 https://golang.org/dl/
