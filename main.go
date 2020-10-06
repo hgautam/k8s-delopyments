@@ -11,6 +11,9 @@ import (
 // returns it to us.
 func newRouter() *mux.Router {
 	r := mux.NewRouter()
+	staticFileDirectory := http.Dir("./assets/")
+	staticFileHandler := http.StripPrefix("/assets/", http.FileServer(staticFileDirectory))
+	r.PathPrefix("/assets/").Handler(staticFileHandler).Methods("GET")
 	r.HandleFunc("/hello", handler).Methods("GET")
 	return r
 }
