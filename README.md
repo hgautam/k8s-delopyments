@@ -4,6 +4,6 @@
 
 * To run the tests, execute the following at the project root dir:
 ```
-go test ./...
+go test . -v
 ```
 
