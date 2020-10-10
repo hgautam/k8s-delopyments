@@ -1,0 +1,34 @@
+
+Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1602354120.7934277,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-go-examples-master-9sgnk-jqrn4[0m
+{"level":"info","ts":1602354131.8108714,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/go-examples.git @ v0.0.1 in path /workspace/source"}
+{"level":"warn","ts":1602354131.810996,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1602354131.8587394,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-build[0m
+go: downloading github.com/gorilla/mux v1.8.0
+go: extracting github.com/gorilla/mux v1.8.0
+go: finding github.com/gorilla/mux v1.8.0
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-examples main.go
+# command-line-arguments
+./main.go:18:24: undefined: getBirdHandler
+./main.go:19:24: undefined: createBirdHandler
+note: module requires Go 1.14
+make: *** [build] Error 2
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-make-build'. The execution of the pipeline has stopped.[0m
