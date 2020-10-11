@@ -1,34 +1,102 @@
 
-Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
-{"level":"info","ts":1602354120.7934277,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1602376149.6767566,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
 
-Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
 
-Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
 
-Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-go-examples-master-9sgnk-jqrn4[0m
-{"level":"info","ts":1602354131.8108714,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/go-examples.git @ v0.0.1 in path /workspace/source"}
-{"level":"warn","ts":1602354131.810996,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
-{"level":"info","ts":1602354131.8587394,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-go-examples-master-kbhd7-v8vf2[0m
+{"level":"info","ts":1602376161.5069044,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/go-examples.git @ v0.0.3 in path /workspace/source"}
+{"level":"warn","ts":1602376161.506994,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1602376161.5479147,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
 
-Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
 
-Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mhgautam-go-examples-master-9sgnk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-build[0m
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-build[0m
 go: downloading github.com/gorilla/mux v1.8.0
 go: extracting github.com/gorilla/mux v1.8.0
 go: finding github.com/gorilla/mux v1.8.0
-CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-examples main.go
-# command-line-arguments
-./main.go:18:24: undefined: getBirdHandler
-./main.go:19:24: undefined: createBirdHandler
-note: module requires Go 1.14
-make: *** [build] Error 2
-[31m
-Pipeline failed on stage 'from-build-pack' : container 'step-build-make-build'. The execution of the pipeline has stopped.[0m
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-examples .
+
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E1011 00:29:35.749868      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0001] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0001] No base image, nothing to extract            
+[36mINFO[0m[0001] Built cross stage deps: map[]                
+[36mINFO[0m[0001] No base image, nothing to extract            
+[36mINFO[0m[0001] Executing 0 build triggers                   
+[36mINFO[0m[0001] cmd: EXPOSE                                  
+[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0001] Checking for cached layer gcr.io/integrated-oath-278216/cache:43b64963024e4e4c786d9a332714b2b356026e213a6298dff275256eb1c59731... 
+[36mINFO[0m[0002] No cached layer found for cmd COPY ./bin/ /  
+[36mINFO[0m[0002] Unpacking rootfs as cmd COPY ./bin/ / requires it. 
+[36mINFO[0m[0002] EXPOSE 8080                                  
+[36mINFO[0m[0002] cmd: EXPOSE                                  
+[36mINFO[0m[0002] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0002] ENTRYPOINT ["/go-examples"]                  
+[36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0002] COPY ./bin/ /                                
+[36mINFO[0m[0002] Resolving 2 paths                            
+[36mINFO[0m[0002] Taking snapshot of files...                  
+[36mINFO[0m[0002] Pushing layer gcr.io/integrated-oath-278216/cache:43b64963024e4e4c786d9a332714b2b356026e213a6298dff275256eb1c59731 to cache now 
+[36mINFO[0m[0002] COPY ./assets /                              
+[36mINFO[0m[0002] Resolving 2 paths                            
+[36mINFO[0m[0002] Taking snapshot of files...                  
+[36mINFO[0m[0002] Pushing layer gcr.io/integrated-oath-278216/cache:2fa2bd3132c10042d2671edab83dbb002f43b46e74a7cd8ee735e5594a8e8158 to cache now 
+
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/go-examples to an unshallow repository
+Generating change log from git ref d2fa05e68f805604fcd6fc5a02a4e67791c558e4 => 11d00bf4d00bb02471c2f20b92ba3a676c879311
+Associating user x-0 in users.jenkins.io with email himanshu@aplimasolutions.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit f9b8628d454b284d4cff464034f8334a938e1df5 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+Associating user x-0 in users.jenkins.io with email himanshu@aplimasolutions.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit f7c792b6e2a7803c5f0e0416975ac3aa592d8be3 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email himanshu@aplimasolutions.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit f7c792b6e2a7803c5f0e0416975ac3aa592d8be3 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: No release found for *******/go-examples and tag v0.0.3 so creating a new release
+Updated the release information at https://github.com/*******/go-examples/releases/tag/v0.0.3
+generated: /workspace/source/charts/go-examples/templates/release.yaml
+Created Release go-examples-0-0-3 resource in namespace **
+Updating PipelineActivity *******-go-examples-master-1 with version 0.0.3
+Updated PipelineActivities *******-go-examples-master-1 with release notes URL: https://github.com/*******/go-examples/releases/tag/v0.0.3
+
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file go-examples-0.0.3.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mhgautam-go-examples-master-kbhd7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app go-examples version 0.0.3 to namespace **-staging
+Created Pull Request: https://github.com/*******/environment-**boot-staging/pull/46
+Added label updatebot to Pull Request https://github.com/*******/environment-**boot-staging/pull/46
+got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/46
+got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/46
+got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/46
+got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/46
+Pull Request https://github.com/*******/environment-**boot-staging/pull/46 is merged at sha bd7f96c47513895b9d07937f651aa6de7a547a06
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names go-examples, **-go-examples, **-staging-go-examples
