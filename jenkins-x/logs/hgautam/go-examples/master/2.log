@@ -1,88 +1,151 @@
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
-{"level":"info","ts":1602354401.6160688,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1602479086.0493143,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-go-examples-master-rele-lh87h-kwbtw[0m
-{"level":"info","ts":1602354409.4006915,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/go-examples.git @ v0.0.2 in path /workspace/source"}
-{"level":"warn","ts":1602354409.4007883,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
-{"level":"info","ts":1602354409.439573,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-go-examples-master-rele-jmv2p-h6d7f[0m
+{"level":"info","ts":1602479093.9406626,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/go-examples.git @ v0.0.5 in path /workspace/source"}
+{"level":"warn","ts":1602479093.9407964,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1602479093.9812863,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:0eaf96b9ee2669fc275a64354d5aec18fc6400c9
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:56053dc69d1fb0964785846681f28176c30d4aa1
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-build[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-build[0m
 go: downloading github.com/gorilla/mux v1.8.0
 go: extracting github.com/gorilla/mux v1.8.0
 go: finding github.com/gorilla/mux v1.8.0
 CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-examples .
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
-E1010 18:27:02.568551      11 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E1012 05:05:07.175638      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
 	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
-[36mINFO[0m[0001] Using dockerignore file: /workspace/source/.dockerignore 
-[36mINFO[0m[0001] No base image, nothing to extract            
-[36mINFO[0m[0001] Built cross stage deps: map[]                
-[36mINFO[0m[0001] No base image, nothing to extract            
-[36mINFO[0m[0001] Executing 0 build triggers                   
-[36mINFO[0m[0001] cmd: EXPOSE                                  
-[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0001] Checking for cached layer gcr.io/integrated-oath-278216/cache:43b64963024e4e4c786d9a332714b2b356026e213a6298dff275256eb1c59731... 
-[36mINFO[0m[0001] No cached layer found for cmd COPY ./bin/ /  
-[36mINFO[0m[0001] Unpacking rootfs as cmd COPY ./bin/ / requires it. 
-[36mINFO[0m[0001] EXPOSE 8080                                  
-[36mINFO[0m[0001] cmd: EXPOSE                                  
-[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0001] ENTRYPOINT ["/go-examples"]                  
-[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0002] COPY ./bin/ /                                
-[36mINFO[0m[0002] Resolving 2 paths                            
-[36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0002] Pushing layer gcr.io/integrated-oath-278216/cache:43b64963024e4e4c786d9a332714b2b356026e213a6298dff275256eb1c59731 to cache now 
+[36mINFO[0m[0000] Resolved base name golang:alpine to build-env 
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] Retrieving image manifest golang:alpine      
+E1012 05:05:07.436079      10 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E1012 05:05:07.439514      10 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[0002] Retrieving image manifest golang:alpine      
+[36mINFO[0m[0002] Retrieving image manifest alpine             
+[36mINFO[0m[0003] Retrieving image manifest alpine             
+[36mINFO[0m[0004] Built cross stage deps: map[0:[/go/src/go-examples/go-examples /go/src/go-examples/assets/]] 
+[36mINFO[0m[0004] Retrieving image manifest golang:alpine      
+[36mINFO[0m[0004] Retrieving image manifest golang:alpine      
+[36mINFO[0m[0005] Executing 0 build triggers                   
+[36mINFO[0m[0005] Checking for cached layer gcr.io/integrated-oath-278216/cache:31c610b0d8a71b89ddd195d4f999bbde8797c2f94f2e27c7dc3c64237fbbd2a8... 
+[36mINFO[0m[0005] No cached layer found for cmd COPY . /go/src/go-examples 
+[36mINFO[0m[0005] Unpacking rootfs as cmd COPY . /go/src/go-examples requires it. 
+[36mINFO[0m[0012] WORKDIR /go/src                              
+[36mINFO[0m[0012] cmd: workdir                                 
+[36mINFO[0m[0012] Changed working directory to /go/src         
+[36mINFO[0m[0012] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0012] COPY . /go/src/go-examples                   
+[36mINFO[0m[0012] Resolving 145 paths                          
+[36mINFO[0m[0012] Taking snapshot of files...                  
+[36mINFO[0m[0013] RUN ls -l                                    
+[36mINFO[0m[0013] Taking snapshot of full filesystem...        
+[36mINFO[0m[0013] Pushing layer gcr.io/integrated-oath-278216/cache:31c610b0d8a71b89ddd195d4f999bbde8797c2f94f2e27c7dc3c64237fbbd2a8 to cache now 
+[36mINFO[0m[0016] Resolving 11781 paths                        
+[36mINFO[0m[0018] cmd: /bin/sh                                 
+[36mINFO[0m[0018] args: [-c ls -l]                             
+[36mINFO[0m[0018] Running: [/bin/sh -c ls -l]                  
+total 4
+drwxr-xr-x    5 root     root          4096 Oct 12 05:05 go-examples
+[36mINFO[0m[0018] Taking snapshot of full filesystem...        
+[36mINFO[0m[0018] Resolving 11781 paths                        
+[36mINFO[0m[0019] No files were changed, appending empty layer to config. No layer added to image. 
+[36mINFO[0m[0019] RUN cd /go/src/go-examples && go build .     
+[36mINFO[0m[0019] cmd: /bin/sh                                 
+[36mINFO[0m[0019] Pushing layer gcr.io/integrated-oath-278216/cache:e18b6ee8a4f307cf5d51ee8d3b69466e9a43de308e5038f6e406f1481bc8e522 to cache now 
+[36mINFO[0m[0019] args: [-c cd /go/src/go-examples && go build .] 
+[36mINFO[0m[0019] Running: [/bin/sh -c cd /go/src/go-examples && go build .] 
+go: downloading github.com/gorilla/mux v1.8.0
+[36mINFO[0m[0021] Taking snapshot of full filesystem...        
+[36mINFO[0m[0021] Resolving 11828 paths                        
+[36mINFO[0m[0023] Pushing layer gcr.io/integrated-oath-278216/cache:8332e2ddb92c2ee674498a0b8121043b82e398a2bd7597cbabd8eb2f1098f3fd to cache now 
+[36mINFO[0m[0025] Saving file go/src/go-examples/go-examples for later use 
+[36mINFO[0m[0025] Saving file go/src/go-examples/assets for later use 
+[36mINFO[0m[0025] Deleting filesystem...                       
+[36mINFO[0m[0026] Retrieving image manifest alpine             
+[36mINFO[0m[0026] Retrieving image manifest alpine             
+[36mINFO[0m[0027] Executing 0 build triggers                   
+[36mINFO[0m[0027] Checking for cached layer gcr.io/integrated-oath-278216/cache:a28f2a71a4a159437106de4999a1efa4d283c1f79f03d1a24db16b55d78f2849... 
+[36mINFO[0m[0028] Using caching version of cmd: RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk* 
+[36mINFO[0m[0028] Checking for cached layer gcr.io/integrated-oath-278216/cache:f20dbef5c9331741f2eb4bd445e8e6c8affdd2dffb20e293b0390dd569682ab8... 
+[36mINFO[0m[0028] No cached layer found for cmd COPY --from=build-env /go/src/go-examples/go-examples /app 
+[36mINFO[0m[0028] cmd: EXPOSE                                  
+[36mINFO[0m[0028] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0028] Unpacking rootfs as cmd COPY --from=build-env /go/src/go-examples/go-examples /app requires it. 
+[36mINFO[0m[0028] RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk* 
+[36mINFO[0m[0028] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0028] WORKDIR /app                                 
+[36mINFO[0m[0028] cmd: workdir                                 
+[36mINFO[0m[0028] Changed working directory to /app            
+[36mINFO[0m[0028] Creating directory /app                      
+[36mINFO[0m[0028] Resolving 1 paths                            
+[36mINFO[0m[0028] Taking snapshot of files...                  
+[36mINFO[0m[0028] COPY --from=build-env /go/src/go-examples/go-examples /app 
+[36mINFO[0m[0028] Resolving 1 paths                            
+[36mINFO[0m[0028] Taking snapshot of files...                  
+[36mINFO[0m[0029] Pushing layer gcr.io/integrated-oath-278216/cache:f20dbef5c9331741f2eb4bd445e8e6c8affdd2dffb20e293b0390dd569682ab8 to cache now 
+[36mINFO[0m[0029] COPY --from=build-env /go/src/go-examples/assets/ /app/assets/ 
+[36mINFO[0m[0029] Resolving 2 paths                            
+[36mINFO[0m[0029] Taking snapshot of files...                  
+[36mINFO[0m[0029] EXPOSE 8080                                  
+[36mINFO[0m[0029] cmd: EXPOSE                                  
+[36mINFO[0m[0029] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0029] Pushing layer gcr.io/integrated-oath-278216/cache:f75cfd892473cb7466864f43087b496497bd9fa659191c6c1dad88c4d5bde43a to cache now 
+[36mINFO[0m[0029] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0029] ENTRYPOINT [ "./go-examples" ]               
+[36mINFO[0m[0029] No files changed in this command, skipping snapshotting. 
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/go-examples to an unshallow repository
-Generating change log from git ref 548f5172dc8ccf27e96c3a756413ce5dfecc53e5 => d2fa05e68f805604fcd6fc5a02a4e67791c558e4
-WARNING: Failed to enrich commit 0eaf96b9ee2669fc275a64354d5aec18fc6400c9 with issues: users.jenkins.io "x-0" already exists
+Generating change log from git ref 8ea40fb536e34fe91044bc5d59875403407b915d => 1f734ed7902ea6d176cac5a4be807ae09a92dadd
+Associating user x-0 in users.jenkins.io with email himanshu@aplimasolutions.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 56053dc69d1fb0964785846681f28176c30d4aa1 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email himanshu@aplimasolutions.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 56053dc69d1fb0964785846681f28176c30d4aa1 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
 Finding issues in commit messages using git format
-WARNING: No release found for *******/go-examples and tag v0.0.2 so creating a new release
-Updated the release information at https://github.com/*******/go-examples/releases/tag/v0.0.2
+WARNING: No release found for *******/go-examples and tag v0.0.5 so creating a new release
+Updated the release information at https://github.com/*******/go-examples/releases/tag/v0.0.5
 generated: /workspace/source/charts/go-examples/templates/release.yaml
-Created Release go-examples-0-0-2 resource in namespace **
-Updating PipelineActivity *******-go-examples-master-2 with version 0.0.2
-Updated PipelineActivities *******-go-examples-master-2 with release notes URL: https://github.com/*******/go-examples/releases/tag/v0.0.2
+Created Release go-examples-0-0-5 resource in namespace **
+Updating PipelineActivity *******-go-examples-master-2 with version 0.0.5
+Updated PipelineActivities *******-go-examples-master-2 with release notes URL: https://github.com/*******/go-examples/releases/tag/v0.0.5
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
 Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file go-examples-0.0.2.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Uploading chart file go-examples-0.0.5.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 
-Showing logs for build [32mhgautam-go-examples-master-rele-lh87h-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+Showing logs for build [32mhgautam-go-examples-master-rele-jmv2p-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Promoting app go-examples version 0.0.2 to namespace **-staging
-Created Pull Request: https://github.com/*******/environment-**boot-staging/pull/45
-Added label updatebot to Pull Request https://github.com/*******/environment-**boot-staging/pull/45
-got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/45
-got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/45
-Pull Request https://github.com/*******/environment-**boot-staging/pull/45 is merged at sha 4bba836d2264587c5bc81ea088fddab1239e36b5
+Promoting app go-examples version 0.0.5 to namespace **-staging
+Created Pull Request: https://github.com/*******/environment-**boot-staging/pull/48
+Added label updatebot to Pull Request https://github.com/*******/environment-**boot-staging/pull/48
+got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/48
+got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/48
+got git provider status pending from PR https://github.com/*******/environment-**boot-staging/pull/48
+Pull Request https://github.com/*******/environment-**boot-staging/pull/48 is merged at sha a61580c521b6cddb31b672afe09f15fe27a2402e
 Pull Request merged but we are not waiting for the update pipeline to complete!
-WARNING: Could not find the service URL in namespace **-staging for names go-examples, **-go-examples, **-staging-go-examples
