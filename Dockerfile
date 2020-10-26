@@ -1,4 +1,4 @@
-FROM golang:alpine AS build-env
+FROM golang:1.14-alpine AS build
 WORKDIR /go/src
 COPY . /go/src/go-examples
 RUN cd /go/src/go-examples && CGO_ENABLED=0 go build .
