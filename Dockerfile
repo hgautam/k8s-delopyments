@@ -1,11 +1,9 @@
 FROM golang:alpine AS build-env
 WORKDIR /go/src
 COPY . /go/src/go-examples
-RUN ls -l
-RUN cd /go/src/go-examples && go build .
+RUN cd /go/src/go-examples && CGO_ENABLED=0 go build .
 
-FROM alpine
-RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk*
+FROM scratch
 WORKDIR /app
 COPY --from=build-env /go/src/go-examples/go-examples /app
 COPY --from=build-env /go/src/go-examples/assets/ /app/assets/
