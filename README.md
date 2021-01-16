@@ -1,6 +1,6 @@
-# go-examples
+## k8s-deployments in Public cloud environments
 
-### simple web app using Go and Go modules
+### Golang based web app
 
 * To run the tests, execute the following at the project root dir:
 ```
